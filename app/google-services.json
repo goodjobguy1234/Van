@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "415916442905",
+    "firebase_url": "https://van-project-71e52.firebaseio.com",
+    "project_id": "van-project-71e52",
+    "storage_bucket": "van-project-71e52.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415916442905:android:a2dfd7df2dafc35718f188",
+        "android_client_info": {
+          "package_name": "com.example.van"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415916442905-9clqg7t9c28qm558ihugc2c7h9bdlqo5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5gvlP-xc2wycncM1BGW8vUKz_jvAwYz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415916442905-9clqg7t9c28qm558ihugc2c7h9bdlqo5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

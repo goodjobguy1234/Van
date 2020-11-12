@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/buy_ticket">
+
+    <fragment
+        android:id="@+id/buy_ticket"
+        android:name="com.example.van.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_buy_ticket_to_favourite_list"
+            app:destination="@id/favourite_list" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favourite_list"
+        android:name="com.example.van.ui.dashboard.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard" >
+
+        <action
+            android:id="@+id/action_favourite_list_to_my_ticket"
+            app:destination="@id/my_ticket" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/my_ticket"
+        android:name="com.example.van.ui.notifications.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications" >
+        <action
+            android:id="@+id/action_my_ticket_to_more_action"
+            app:destination="@id/more_action" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/more_action"
+        android:name="com.example.van.ui.more_action.moreAction"
+        tools:layout="@layout/more_action_fragment" />
+</navigation>

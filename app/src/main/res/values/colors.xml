@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#044B61</color>
+    <color name="colorPrimaryDark">#023459</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="colorTimeFull">#C0392B</color>
+    <color name="colorTimeCan">#14B344</color>
+    <color name="colorPrimaryLight">#14B3AF</color>
+    <color name="notAvaliable">#D1D3D4</color>
+    <color name="appBackground">#F8F8F8</color>
+</resources>

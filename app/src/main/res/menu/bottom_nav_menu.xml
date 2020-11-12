@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/buy_ticket"
+        android:icon="@drawable/ic_add_ticket"
+        android:title="ticket" />
+
+    <item
+        android:id="@+id/favourite_list"
+        android:title="favourite"
+        android:icon="@drawable/ic_star"
+        />
+
+    <item
+        android:id="@+id/my_ticket"
+        android:icon="@drawable/ic_ticket"
+        android:title="myTicket" />
+    <item
+        android:id="@+id/more_action"
+        android:icon="@drawable/ic_more"
+        android:title="moreAction" />
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Van</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="type_1">Go to AU</string>
+    <string name="type_2">Depart from AU</string>
+</resources>
