@@ -36,6 +36,6 @@
 
     <fragment
         android:id="@+id/more_action"
-        android:name="com.example.van.ui.more_action.moreAction"
+        android:name="com.example.van.ui.more_action.MoreAction"
         tools:layout="@layout/more_action_fragment" />
 </navigation>

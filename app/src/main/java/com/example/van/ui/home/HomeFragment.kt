@@ -38,7 +38,7 @@ class HomeFragment() : Fragment() {
         val options:FirestoreRecyclerOptions<VanData> = FirestoreRecyclerOptions.Builder<VanData>()
             .setQuery(query, VanData::class.java)
             .build()
-        myAdapter = MyAdapter(options, this.context)
+        myAdapter = MyAdapter(options)
         recyclerView = view.findViewById(R.id.recycleViewer) as RecyclerView
         recyclerView.apply {
             setHasFixedSize(true)

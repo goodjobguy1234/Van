@@ -12,7 +12,7 @@ import com.example.van.VanData
 import kotlinx.android.synthetic.main.viewhome.view.*
 
 
-class MyViewHolder(itemView: View, val mcontext:Context, count:Int) : RecyclerView.ViewHolder(itemView) {
+class HomeViewHolder(itemView: View, val mcontext:Context) : RecyclerView.ViewHolder(itemView) {
 
 
     companion object {
@@ -27,6 +27,8 @@ class MyViewHolder(itemView: View, val mcontext:Context, count:Int) : RecyclerVi
         itemView.price.text = item.price.toString()
         Glide.with(mcontext).load(item.pic)
             .into(itemView.imageView)
+        itemView.radioButton1.text = "${item.name} - AU"
+        itemView.radioButton2.text = "AU - ${item.name}"
 
     }
 

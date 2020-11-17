@@ -11,19 +11,18 @@ import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 
 
-class MyAdapter(options: FirestoreRecyclerOptions<VanData>, mcontext:Context?): FirestoreRecyclerAdapter<VanData, MyViewHolder>(options) {
+class MyAdapter(options: FirestoreRecyclerOptions<VanData>): FirestoreRecyclerAdapter<VanData, HomeViewHolder>(options) {
 
-    lateinit var holder: MyViewHolder
+    lateinit var holder: HomeViewHolder
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.viewhome, parent,false)
-        holder = MyViewHolder(view, parent.context, snapshots.count())
-        Log.d("count", snapshots.count().toString())
+        holder = HomeViewHolder(view, parent.context)
         return holder
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int, model: VanData) {
+    override fun onBindViewHolder(holder: HomeViewHolder, position: Int, model: VanData) {
         holder.apply {
             bind(model, layoutPosition)
             onclickRadio(layoutPosition)
