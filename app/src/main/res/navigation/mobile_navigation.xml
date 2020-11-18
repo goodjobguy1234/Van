@@ -38,4 +38,9 @@
         android:id="@+id/more_action"
         android:name="com.example.van.ui.more_action.MoreAction"
         tools:layout="@layout/more_action_fragment" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.van.ui.home.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
 </navigation>
