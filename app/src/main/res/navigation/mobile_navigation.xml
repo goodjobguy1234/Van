@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_buy_ticket_to_favourite_list"
             app:destination="@id/favourite_list" />
+        <action
+            android:id="@+id/action_buy_ticket_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
 
     <fragment
@@ -38,9 +41,33 @@
         android:id="@+id/more_action"
         android:name="com.example.van.ui.more_action.MoreAction"
         tools:layout="@layout/more_action_fragment" />
+
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.example.van.ui.home.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="phone"
+            app:argType="string"
+            android:defaultValue='"Unknow"' />
+        <argument
+            android:name="pic_url"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailFragment_to_seatSelectFragment"
+            app:destination="@id/seatSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seatSelectFragment"
+        android:name="com.example.van.ui.home.SeatSelectFragment"
+        android:label="fragment_seat_select"
+        tools:layout="@layout/fragment_seat_select" />
+
 </navigation>

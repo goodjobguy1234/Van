@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.findFragment
@@ -20,12 +21,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.van.R
 import com.example.van.VanData
 import com.example.van.ui.RecyclerView.MyAdapter
+import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
+import kotlinx.android.synthetic.main.viewhome.*
 
 
-class HomeFragment() : Fragment(), View.OnClickListener {
+class HomeFragment() : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private val db = FirebaseFirestore.getInstance()
     private val query:Query = db.collection("vandata")
@@ -65,7 +69,6 @@ class HomeFragment() : Fragment(), View.OnClickListener {
         super.onStop()
         myAdapter.stopListening()
 
-
     }
 
     override fun onStart() {
@@ -76,13 +79,6 @@ class HomeFragment() : Fragment(), View.OnClickListener {
 
 
 
-    override fun onClick(p0: View?) {
-        Log.d(HomeFragment.TAG,"onclick")
-        p0?.findNavController()?.navigate(R.id.detailFragment)
-
-
-
-    }
 
 
 }

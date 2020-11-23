@@ -1,6 +1,7 @@
 package com.example.van
 
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
@@ -23,6 +24,13 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
 
         navView.setupWithNavController(navController)
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if (destination.id == R.id.detailFragment || destination.id == R.id.seatSelectFragment){
+                navView.visibility = View.GONE
+            }else{
+                navView.visibility = View.VISIBLE
+            }
+        }
 
 
     }
